@@ -14,10 +14,10 @@ export default class App {
     let src = path.resolve(baseDir, this.config.path.src)
     let dist = path.resolve(baseDir, this.config.path.dist)
 
-    let babel = path.resolve(baseDir, '../node_modules/.bin/babel')
-    let es2015 = path.resolve(baseDir, '../node_modules/babel-preset-es2015')
-    let stage3 = path.resolve(baseDir, '../node_modules/babel-preset-stage-3')
-    let transformRuntime = path.resolve(baseDir, '../node_modules/babel-plugin-transform-runtime')
+    let babel = path.resolve(baseDir, 'node_modules/.bin/babel')
+    let es2015 = path.resolve(baseDir, 'node_modules/babel-preset-es2015')
+    let stage3 = path.resolve(baseDir, 'node_modules/babel-preset-stage-3')
+    let transformRuntime = path.resolve(baseDir, 'node_modules/babel-plugin-transform-runtime')
     runBash(`
       rm -rf ${dist} && cp -r ${src} ${dist} &&
       ${babel} --presets ${es2015},${stage3} --plugins ${transformRuntime} ${src} --out-dir ${dist} --source-maps inline ${watch}

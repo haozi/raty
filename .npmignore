@@ -2,6 +2,5 @@ node_modules
 coverage
 demo
 test
-src
 ISSUE_TEMPLATE.md
 appveyor.yml

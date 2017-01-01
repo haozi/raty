@@ -1,4 +1,4 @@
-# koaplus
+# raty
 a node framework base koa@2 that can use full es2016, es2017 syntax anywhere
 
 <!--[![Build Status](https://travis-ci.org/haozime/koaplus.svg?branch=master)](https://travis-ci.org/haozime/koaplus/branches)-->
@@ -10,14 +10,21 @@ a node framework base koa@2 that can use full es2016, es2017 syntax anywhere
 ## Install
 
 ```sh
-$ npm install devtool -g
-$ npm install
+npm install devtool -g
+npm install raty -g
 
 ```
 
 ## How to use
 ```
-npm run dev # dev mode
-npm run build # compile src to lib
+raty init your_project
+npm install
+npm run build
+npm run start
+
 ```
 open http://127.0.0.1:2017
+
+## TODO
+* raty init
+* middlewares

@@ -20,3 +20,4 @@ $ npm install
 npm run dev # dev mode
 npm run build # compile src to lib
 ```
+open http://127.0.0.1:2017

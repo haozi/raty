@@ -11,7 +11,7 @@ a node framework base koa@2 that can use full es2016, es2017 syntax anywhere
 
 ```sh
 $ npm install devtool -g
-$ npm Install
+$ npm install
 
 ```
 

@@ -13,6 +13,6 @@ async function getData () {
       let data = 'world'
       console.info(data)
       resolve(data)
-    })
+    }, 1000)
   })
 }

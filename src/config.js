@@ -7,7 +7,8 @@ export default {
       entry: 'bin/server.js'
     },
     server: '127.0.0.1',
-    port: 2017
+    port: 2017,
+    env: 'production'
   },
   development: {
 

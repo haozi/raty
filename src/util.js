@@ -29,7 +29,7 @@ export function getConfig () {
   if (!config.path.baseDir) {
     config.path.baseDir = path.dirname(userConfigPath, '.')
   }
-  config.env = process.env.NODE_ENV
+  config.env = process.env.NODE_ENV || config.env
   return config
 }
 

@@ -8,7 +8,7 @@ import resetConfig from './config.rest'
 
 let cache
 export function getConfig () {
-  let config, userConfigPath
+  let userConfigPath
   if (!cache) {
     const pwd = process.cwd()
     let userConfig
@@ -24,7 +24,7 @@ export function getConfig () {
     cache = merge({}, defaultConfig, userConfig, resetConfig)
   }
 
-  config = merge({}, cache.base, cache[process.env.NODE_ENV])
+  let config = merge({}, cache.base, cache[process.env.NODE_ENV])
 
   if (!config.path.baseDir) {
     config.path.baseDir = path.dirname(userConfigPath, '.')

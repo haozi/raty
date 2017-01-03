@@ -1,6 +1,7 @@
 export default {
   base: {
     path: {
+      baseDir: '',
       src: 'src',
       dist: 'app',
       config: 'raty.config.js',

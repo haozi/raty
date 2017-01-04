@@ -12,6 +12,7 @@ commander
   .option(' start', 'run server')
   .option(' dev', 'run dev')
   .option(' build', 'run build')
+  .option(' test')
   .parse(process.argv)
 
 if (commander.dev) {
@@ -33,4 +34,8 @@ if (commander.start) {
   runBash(`
     NODE_ENV=production node ${config.path.baseDir}/${config.path.entry}
   `)
+}
+
+if( commander.test) {
+  (new App())['_serialLocalMiddlewares'](__dirname)
 }

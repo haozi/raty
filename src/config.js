@@ -9,7 +9,10 @@ export default {
     },
     server: '127.0.0.1',
     port: 2017,
-    env: 'production'
+    env: 'production',
+    middlewares: [
+
+    ]
   },
   development: {
 

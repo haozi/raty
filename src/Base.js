@@ -8,7 +8,7 @@ export default class Base {
     let src = Path.resolve(baseDir, this.config.path.src)
     let dist = Path.resolve(baseDir, this.config.path.dist)
 
-    let babel = Path.resolve(baseDir, 'node_modules/.bin/babel')
+    let babel = Path.resolve(baseDir, 'node_modules/babel-cli/bin/babel.js')
     let es2015 = Path.resolve(baseDir, 'node_modules/babel-preset-es2015')
     let stage3 = Path.resolve(baseDir, 'node_modules/babel-preset-stage-3')
     let transformRuntime = Path.resolve(baseDir, 'node_modules/babel-plugin-transform-runtime')

@@ -1,6 +1,6 @@
 {
   "name": "raty",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a node framework base koa@2 that can use full es2016, es2017 syntax anywhere",
   "main": "app/index.js",
   "dependencies": {
